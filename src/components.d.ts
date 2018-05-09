@@ -68,6 +68,7 @@ declare global {
   namespace StencilComponents {
     interface FluentContent {
       'noImage': boolean;
+      'theme': string;
     }
   }
 
@@ -91,6 +92,7 @@ declare global {
   namespace JSXElements {
     export interface FluentContentAttributes extends HTMLAttributes {
       'noImage'?: boolean;
+      'theme'?: string;
     }
   }
 }

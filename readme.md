@@ -47,4 +47,5 @@ body {
 * A content wrapper for an application using Fluent for Web. It is optional but recommended.
 
 | Property | Type | Default | Description |
+| -------- | ---- | ------- | ----------- |
 | no-image | `boolean` | `false` | Disables a page-wide background image, instead opting for a solid background. |

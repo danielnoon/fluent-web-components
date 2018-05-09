@@ -6,6 +6,14 @@
   // --background-image: url(attr(background-image));
 }
 
+.content.dark {
+  color: white;
+}
+
+.content.light {
+  color: black;
+}
+
 .content.image {
   background: var(--background-image, white) center/cover;
   background-attachment: fixed;

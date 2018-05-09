@@ -8,7 +8,7 @@
   <style>
     :root {
       --background-image: url(https://seminar.supermegadex.cf/assets/lochleven.jpg);
-      --color-scheme: #000;
+      /* --color-scheme: black; */
     }
 
     body {
@@ -28,16 +28,21 @@
 </head>
 <body>
 
-  <fluent-content>
+  <fluent-content theme="dark">
     <div class="test"></div>
-    <fluent-acrylic padding tint-opacity="5">
+    <fluent-acrylic padding tint-opacity="6">
       Hello!
     </fluent-acrylic>
-    <fluent-acrylic padding tint-opacity="3" tint-color="#ab6391" background-source="backdrop">
+    <fluent-acrylic padding tint-opacity="3" tint-color="#ab6391">
+      Hello!
+    </fluent-acrylic>
+    <fluent-acrylic padding tint-opacity="6" tint-color="red">
+      Hello!
+    </fluent-acrylic>
+    <fluent-acrylic padding tint-opacity="1" tint-color="blue">
       Hello!
     </fluent-acrylic>
   </fluent-content>
-  <!-- <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component> -->
 
 </body>
 </html>

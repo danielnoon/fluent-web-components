@@ -16,8 +16,10 @@ export class FluentAcrylicComponent {
     this.el.style.setProperty('--tint-color', this.tintColor ? this.tintColor : 'var(--color-scheme)');
     return (
       <div
-        class={`acrylic ${this.padding ? 'padding' : ''} o${this.tintOpacity} ${this.backgroundSource}`}>
-        <slot />  
+        class={`acrylic o${this.tintOpacity} ${this.backgroundSource}`}>
+        <div class={`acrylic-inner ${this.padding ? 'padding' : ''}`}>
+          <slot />  
+        </div>  
       </div>  
     )
   }
