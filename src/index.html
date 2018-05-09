@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Fluent Components Tests</title>
+  <script src="/build/fluent.js"></script>
+  <style>
+    :root {
+      --background-image: url(https://seminar.supermegadex.cf/assets/lochleven.jpg);
+      --color-scheme: #000;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .test {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 120px;
+      left: 50px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+
+  <fluent-content>
+    <div class="test"></div>
+    <fluent-acrylic padding tint-opacity="5">
+      Hello!
+    </fluent-acrylic>
+    <fluent-acrylic padding tint-opacity="3" tint-color="#ab6391" background-source="backdrop">
+      Hello!
+    </fluent-acrylic>
+  </fluent-content>
+  <!-- <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component> -->
+
+</body>
+</html>
