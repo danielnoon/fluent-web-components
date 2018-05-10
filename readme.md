@@ -7,9 +7,9 @@ Microsoft's Fluent Design system implemented for the web using Stencil.
 #### Available Components:
 * [Acrylic](#acrylic)
 * [Content](#content)
+* [Button](#button)
 
 #### Coming Soon:
-* Button
 * Input
 * Navigation View
 
@@ -28,6 +28,8 @@ body {
 ### Acrylic
 * Creates a container for child elements with the Fluent Acrylic effect applied.
 
+Tag: `fluent-acrylic`
+
 | Property          | Type      | Default               | Description |
 | --------          | ----      | -------               | ----------- |
 | padding           | `boolean` | `false`               | Gives acrylic children some room to breathe. |
@@ -35,8 +37,23 @@ body {
 | tint-color        | css color | color scheme          | Changes the tinit color of the acrylic from the default color scheme specified. |
 | background-source | `"host-backdrop"` or `"backdrop"` | `"host-backdrop"` | Which background source to use as the background of the acrylic. `"host-backdrop"` uses the image set for the `--background-image` variable, while `"backdrop"` uses the content behind the element (right now this uses [backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) so it may not work in all browsers yet). |
 
+
+### Button
+* A simple button component with support for custom styling as specified in the UWP docs.
+
+Tag: `fluent-button`
+
+| Property | Type | Default | Description |
+| -------- | ---- | ------- | ----------- |
+| background | `string` | based on theme | Changes the default background of the button |
+| foreground | `string` | based on theme | Changes the default text color of the button |
+
+...and several other properties. See Microsoft's specs on UWP button styling for more info.
+
 ### Content
 * A content wrapper for an application using Fluent for Web. It is optional but recommended.
+
+Tag: `fluent-content`
 
 | Property | Type | Default | Description |
 | -------- | ---- | ------- | ----------- |
