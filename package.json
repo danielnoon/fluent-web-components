@@ -2,13 +2,13 @@
   "name": "fluent-web-components",
   "version": "0.0.1",
   "description": "Fluent Design Components",
-  "main": "dist/fluent.js",
+  "main": "dist/fluent.core.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
   ],
-  "browser": "dist/fluent.js",
+  "browser": "dist/fluent.core.js",
   "scripts": {
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
@@ -18,9 +18,9 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/sass": "0.0.5"
   },
   "devDependencies": {
+    "@stencil/sass": "0.0.5",
     "@stencil/core": "^0.7.22",
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
