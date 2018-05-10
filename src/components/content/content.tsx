@@ -8,9 +8,10 @@ export class FluentContentComponent {
   @Element() el!: HTMLElement;
 
   @Prop() noImage: boolean;
-  @Prop() theme: string;
+  @Prop() theme: 'light' | 'dark';
+  @Prop() backgroundImage: string;
 
-  setColors() {
+  setCSSVariables() {
     if (this.theme === "dark") {
       this.el.style.setProperty('--color-scheme', 'black');
       this.el.style.setProperty('--text-color', 'white');
@@ -19,10 +20,13 @@ export class FluentContentComponent {
       this.el.style.setProperty('--color-scheme', 'white');
       this.el.style.setProperty('--text-color', 'black');
     }
+    if (this.backgroundImage) {
+      this.el.style.setProperty('--background-image', `url(${this.backgroundImage})`);
+    }
   }
 
   render() {
-    this.setColors();
+    this.setCSSVariables();
     return (
       <div class={`content ${this.noImage ? 'solid' : 'image'} ${this.theme}`}>
         <slot />

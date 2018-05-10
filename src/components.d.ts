@@ -28,7 +28,7 @@ declare global {
 
   namespace StencilComponents {
     interface FluentAcrylic {
-      'backgroundSource': string;
+      'backgroundSource': 'host-backdrop' | 'backdrop';
       'padding': boolean;
       'tintColor': string;
       'tintOpacity': number;
@@ -54,7 +54,7 @@ declare global {
   }
   namespace JSXElements {
     export interface FluentAcrylicAttributes extends HTMLAttributes {
-      'backgroundSource'?: string;
+      'backgroundSource'?: 'host-backdrop' | 'backdrop';
       'padding'?: boolean;
       'tintColor'?: string;
       'tintOpacity'?: number;
@@ -67,8 +67,9 @@ declare global {
 
   namespace StencilComponents {
     interface FluentContent {
+      'backgroundImage': string;
       'noImage': boolean;
-      'theme': string;
+      'theme': 'light' | 'dark';
     }
   }
 
@@ -91,8 +92,9 @@ declare global {
   }
   namespace JSXElements {
     export interface FluentContentAttributes extends HTMLAttributes {
+      'backgroundImage'?: string;
       'noImage'?: boolean;
-      'theme'?: string;
+      'theme'?: 'light' | 'dark';
     }
   }
 }

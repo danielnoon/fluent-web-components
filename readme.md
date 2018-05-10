@@ -16,15 +16,7 @@ Microsoft's Fluent Design system implemented for the web using Stencil.
 ## Getting started
 Install from npm: `npm i --save <name of package once it's published>`
 
-Set up some global css that includes some variables for the components to use:
-```css
-:root {
-  --background-image: url(url-to-background-image);
-  --color-scheme: black; /* This should either be black or white, but it can be whatever you want */
-}
-```
-
-If you don't already have the body set to have no margin & padding, include this, too:
+If you don't already have the body set to have no margin & padding, make sure you do.
 ```css
 body {
   margin: 0;
@@ -49,3 +41,5 @@ body {
 | Property | Type | Default | Description |
 | -------- | ---- | ------- | ----------- |
 | no-image | `boolean` | `false` | Disables a page-wide background image, instead opting for a solid background. |
+| theme    | `"light"` or `"dark"` | `"light"` | Apply the selected theme to all fluent elements that are children of this content. |
+| background-image | `string` | `undefined` | Set the host backdrop of the content. |

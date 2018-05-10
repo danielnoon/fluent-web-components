@@ -6,11 +6,6 @@
   <title>Fluent Components Tests</title>
   <script src="/build/fluent.js"></script>
   <style>
-    :root {
-      --background-image: url(https://seminar.supermegadex.cf/assets/lochleven.jpg);
-      /* --color-scheme: black; */
-    }
-
     body {
       margin: 0;
       padding: 0;
@@ -24,24 +19,36 @@
       left: 50px;
       background: red;
     }
+
+    .grid {
+      display: grid;
+      grid-template-rows: 1fr 60%;
+      grid-template-columns: 25% 1fr;
+      height: 100%;
+    }
+
+    .grid > fluent-acrylic {
+      height: 100%;
+    }
   </style>
 </head>
 <body>
 
-  <fluent-content theme="dark">
-    <div class="test"></div>
-    <fluent-acrylic padding tint-opacity="6">
-      Hello!
-    </fluent-acrylic>
-    <fluent-acrylic padding tint-opacity="3" tint-color="#ab6391">
-      Hello!
-    </fluent-acrylic>
-    <fluent-acrylic padding tint-opacity="6" tint-color="red">
-      Hello!
-    </fluent-acrylic>
-    <fluent-acrylic padding tint-opacity="1" tint-color="blue">
-      Hello!
-    </fluent-acrylic>
+  <fluent-content theme="light" background-image="https://seminar.supermegadex.cf/assets/lochleven.jpg">
+    <div class="grid">
+      <fluent-acrylic padding tint-opacity="6">
+        Hello!
+      </fluent-acrylic>
+      <fluent-acrylic padding tint-opacity="3" tint-color="#ab6391">
+        Hello!
+      </fluent-acrylic>
+      <fluent-acrylic padding tint-opacity="6" tint-color="red">
+        Hello!
+      </fluent-acrylic>
+      <fluent-acrylic padding tint-opacity="1" tint-color="blue">
+        Hello!
+      </fluent-acrylic>
+    </div>
   </fluent-content>
 
 </body>

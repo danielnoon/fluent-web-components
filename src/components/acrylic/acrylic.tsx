@@ -9,7 +9,7 @@ export class FluentAcrylicComponent {
 
   @Prop() padding: boolean = false;
   @Prop() tintOpacity: number = 5;
-  @Prop() backgroundSource: string = 'host-backdrop';
+  @Prop() backgroundSource: 'host-backdrop' | 'backdrop' = 'host-backdrop';
   @Prop() tintColor: string;
 
   render() {
