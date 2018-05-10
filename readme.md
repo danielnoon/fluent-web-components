@@ -14,7 +14,7 @@ Microsoft's Fluent Design system implemented for the web using Stencil.
 * Navigation View
 
 ## Getting started
-Install from npm: `npm i --save <name of package once it's published>`
+Install from npm: `npm i --save fluent-web-components`
 
 If you don't already have the body set to have no margin & padding, make sure you do.
 ```css
@@ -31,7 +31,7 @@ body {
 | Property          | Type      | Default               | Description |
 | --------          | ----      | -------               | ----------- |
 | padding           | `boolean` | `false`               | Gives acrylic children some room to breathe. |
-| tint-opacity      | `[1-9]`   | `5`                   | Opacity from 1 to 9 of the background of the acrylic |
+| tint-opacity      | `[1-10]`   | `5`                   | Opacity from 1 to 9 of the background of the acrylic |
 | tint-color        | css color | color scheme          | Changes the tinit color of the acrylic from the default color scheme specified. |
 | background-source | `"host-backdrop"` or `"backdrop"` | `"host-backdrop"` | Which background source to use as the background of the acrylic. `"host-backdrop"` uses the image set for the `--background-image` variable, while `"backdrop"` uses the content behind the element (right now this uses [backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) so it may not work in all browsers yet). |
 

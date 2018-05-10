@@ -2,7 +2,8 @@ import { Component, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'fluent-content',
-  styleUrl: 'content.scss'
+  styleUrl: 'content.scss',
+  shadow: true
 })
 export class FluentContentComponent {
   @Element() el!: HTMLElement;
@@ -15,6 +16,8 @@ export class FluentContentComponent {
     if (this.theme === "dark") {
       this.el.style.setProperty('--color-scheme', 'black');
       this.el.style.setProperty('--text-color', 'white');
+      this.el.style.setProperty('--button-background', '#2039583');
+
     }
     if (this.theme === "light") {
       this.el.style.setProperty('--color-scheme', 'white');

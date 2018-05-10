@@ -66,6 +66,45 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface FluentButton {
+      'backgroundSource': 'host-backdrop' | 'backdrop';
+      'padding': boolean;
+      'tintColor': string;
+      'tintOpacity': number;
+    }
+  }
+
+  interface HTMLFluentButtonElement extends StencilComponents.FluentButton, HTMLStencilElement {}
+
+  var HTMLFluentButtonElement: {
+    prototype: HTMLFluentButtonElement;
+    new (): HTMLFluentButtonElement;
+  };
+  interface HTMLElementTagNameMap {
+    'fluent-button': HTMLFluentButtonElement;
+  }
+  interface ElementTagNameMap {
+    'fluent-button': HTMLFluentButtonElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'fluent-button': JSXElements.FluentButtonAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FluentButtonAttributes extends HTMLAttributes {
+      'backgroundSource'?: 'host-backdrop' | 'backdrop';
+      'padding'?: boolean;
+      'tintColor'?: string;
+      'tintOpacity'?: number;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface FluentContent {
       'backgroundImage': string;
       'noImage': boolean;

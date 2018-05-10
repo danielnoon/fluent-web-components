@@ -1,5 +1,5 @@
 {
-  "name": "fluent-components",
+  "name": "fluent-web-components",
   "version": "0.0.1",
   "description": "Fluent Design Components",
   "main": "dist/fluent.js",

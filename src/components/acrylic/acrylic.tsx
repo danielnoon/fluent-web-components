@@ -2,7 +2,8 @@ import { Component, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'fluent-acrylic',
-  styleUrl: 'acrylic.scss'
+  styleUrl: 'acrylic.scss',
+  shadow: true
 })
 export class FluentAcrylicComponent {
   @Element() el!: HTMLElement;
