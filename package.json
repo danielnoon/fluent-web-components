@@ -1,14 +1,14 @@
 {
   "name": "fluent-web-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fluent Design Components",
-  "main": "dist/fluent.core.js",
+  "main": "dist/fluent.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
   ],
-  "browser": "dist/fluent.core.js",
+  "browser": "dist/fluent.js",
   "scripts": {
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
