@@ -67,10 +67,14 @@ declare global {
 
   namespace StencilComponents {
     interface FluentButton {
-      'backgroundSource': 'host-backdrop' | 'backdrop';
-      'padding': boolean;
-      'tintColor': string;
-      'tintOpacity': number;
+      'background': string;
+      'backgroundPointerOver': string;
+      'backgroundPressed': string;
+      'borderPointerOver': string;
+      'borderPressed': string;
+      'foreground': string;
+      'foregroundPointerOver': string;
+      'foregroundPressed': string;
     }
   }
 
@@ -93,10 +97,14 @@ declare global {
   }
   namespace JSXElements {
     export interface FluentButtonAttributes extends HTMLAttributes {
-      'backgroundSource'?: 'host-backdrop' | 'backdrop';
-      'padding'?: boolean;
-      'tintColor'?: string;
-      'tintOpacity'?: number;
+      'background'?: string;
+      'backgroundPointerOver'?: string;
+      'backgroundPressed'?: string;
+      'borderPointerOver'?: string;
+      'borderPressed'?: string;
+      'foreground'?: string;
+      'foregroundPointerOver'?: string;
+      'foregroundPressed'?: string;
     }
   }
 }

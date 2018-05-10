@@ -16,12 +16,17 @@ export class FluentContentComponent {
     if (this.theme === "dark") {
       this.el.style.setProperty('--color-scheme', 'black');
       this.el.style.setProperty('--text-color', 'white');
-      this.el.style.setProperty('--button-background', '#2039583');
+      this.el.style.setProperty('--button-background', '#333');
+      this.el.style.setProperty('--button-background-active', '#666');
+      this.el.style.setProperty('--button-outline', '#858585');
 
     }
     if (this.theme === "light") {
       this.el.style.setProperty('--color-scheme', 'white');
       this.el.style.setProperty('--text-color', 'black');
+      this.el.style.setProperty('--button-background', '#ccc');
+      this.el.style.setProperty('--button-background-active', '#999');
+      this.el.style.setProperty('--button-outline', '#7a7a7a');
     }
     if (this.backgroundImage) {
       this.el.style.setProperty('--background-image', `url(${this.backgroundImage})`);

@@ -1,0 +1,28 @@
+/**
+dark:
+  background: #333333
+  outline: #858585
+  active: #666666
+light:
+  background: #ccc
+  outline: #7a7a7a
+  active: #999
+ */
+
+.button {
+  padding: 5px 10px;
+  color: var(--text-color);
+  border: 2px solid var(--button-background);
+  background: var(--button-background);
+  transition: 100ms ease-in-out transform;
+}
+
+.button:hover {
+  border: 2px solid var(--button-outline);
+}
+
+.button:active {
+  border: 2px solid var(--button-background-active);
+  background: var(--button-background-active);
+  transform: scale(.95, .95);
+}
