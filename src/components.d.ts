@@ -174,6 +174,39 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface FluentListItem {
+
+    }
+  }
+
+  interface HTMLFluentListItemElement extends StencilComponents.FluentListItem, HTMLStencilElement {}
+
+  var HTMLFluentListItemElement: {
+    prototype: HTMLFluentListItemElement;
+    new (): HTMLFluentListItemElement;
+  };
+  interface HTMLElementTagNameMap {
+    'fluent-list-item': HTMLFluentListItemElement;
+  }
+  interface ElementTagNameMap {
+    'fluent-list-item': HTMLFluentListItemElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'fluent-list-item': JSXElements.FluentListItemAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FluentListItemAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface FluentListView {
 
     }
