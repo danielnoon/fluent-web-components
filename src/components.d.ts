@@ -28,9 +28,21 @@ declare global {
 
   namespace StencilComponents {
     interface FluentAcrylic {
+      /**
+       * Sets the background image source of the acrylic. There are two options: * `"host-backdrop"` sets the backdrop as the background image set     in the `fluent-content` object. * `"backdrop"` sets the backdrop to the entire content behind the acrylic.     * Warning: the technology used to achieve this effect is not supported in many browsers. 
+       */
       'backgroundSource': 'host-backdrop' | 'backdrop';
+      /**
+       * If true, add padding to the acrylic object.
+       */
       'padding': boolean;
+      /**
+       * Set the tint color of the acrylic. Value should be a css color code (i.e. `'#fff'`, `'white'`, or `'rgb(255,255,255)'`)
+       */
       'tintColor': string;
+      /**
+       * Changes the opacity of the backdrop tint. Higher values make the color more prominent. It does not change blur. Value should be an integer from `1` to `10`.
+       */
       'tintOpacity': number;
     }
   }
@@ -54,9 +66,21 @@ declare global {
   }
   namespace JSXElements {
     export interface FluentAcrylicAttributes extends HTMLAttributes {
+      /**
+       * Sets the background image source of the acrylic. There are two options: * `"host-backdrop"` sets the backdrop as the background image set     in the `fluent-content` object. * `"backdrop"` sets the backdrop to the entire content behind the acrylic.     * Warning: the technology used to achieve this effect is not supported in many browsers. 
+       */
       'backgroundSource'?: 'host-backdrop' | 'backdrop';
+      /**
+       * If true, add padding to the acrylic object.
+       */
       'padding'?: boolean;
+      /**
+       * Set the tint color of the acrylic. Value should be a css color code (i.e. `'#fff'`, `'white'`, or `'rgb(255,255,255)'`)
+       */
       'tintColor'?: string;
+      /**
+       * Changes the opacity of the backdrop tint. Higher values make the color more prominent. It does not change blur. Value should be an integer from `1` to `10`.
+       */
       'tintOpacity'?: number;
     }
   }
@@ -142,6 +166,39 @@ declare global {
       'backgroundImage'?: string;
       'noImage'?: boolean;
       'theme'?: 'light' | 'dark';
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface FluentListView {
+
+    }
+  }
+
+  interface HTMLFluentListViewElement extends StencilComponents.FluentListView, HTMLStencilElement {}
+
+  var HTMLFluentListViewElement: {
+    prototype: HTMLFluentListViewElement;
+    new (): HTMLFluentListViewElement;
+  };
+  interface HTMLElementTagNameMap {
+    'fluent-list-view': HTMLFluentListViewElement;
+  }
+  interface ElementTagNameMap {
+    'fluent-list-view': HTMLFluentListViewElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'fluent-list-view': JSXElements.FluentListViewAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FluentListViewAttributes extends HTMLAttributes {
+
     }
   }
 }

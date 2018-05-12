@@ -13,8 +13,8 @@
 
     .grid {
       display: grid;
-      grid-template-rows: 1fr 60%;
-      grid-template-columns: 25% 1fr;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 50% 1fr;
       height: 100%;
     }
 
@@ -27,17 +27,14 @@
 
   <fluent-content theme="light" background-image="https://seminar.supermegadex.cf/assets/lochleven.jpg">
     <div class="grid">
+      <fluent-acrylic tint-opacity="3">
+        <fluent-list-view items-source="{}"></fluent-list-view>
+      </fluent-acrylic>
       <fluent-acrylic padding tint-opacity="6">
-        Hello! <fluent-button onclick="alert('pressed!!')">Button</fluent-button>
+        Center
       </fluent-acrylic>
-      <fluent-acrylic padding tint-opacity="3" tint-color="green">
-        Hello! <fluent-button background="blue" foreground="white" border-pointer-over="red">Button</fluent-button>
-      </fluent-acrylic>
-      <fluent-acrylic padding tint-opacity="6" tint-color="red">
-        Hello! <fluent-button>Button</fluent-button>
-      </fluent-acrylic>
-      <fluent-acrylic padding tint-opacity="1" tint-color="blue">
-        Hello! <fluent-button>Button</fluent-button>
+      <fluent-acrylic padding tint-opacity="3">
+        Right
       </fluent-acrylic>
     </div>
   </fluent-content>
